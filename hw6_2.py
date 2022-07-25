@@ -5,14 +5,14 @@ Usage: hw6_2.py <string small/large> <boolean test only>
 
 """
 Abstraction Function:
-    This program trains and saves a conv neural network. 
+    This program trains and saves a neural network. 
     The network produces as output a set of detected objects 
     including their class labels and bounding boxes.
     The images with their bounding boxes are sent to the same folder as 
     image directory
 
 Architecture:
-    - The RCNN using predefined region proposals. The network uses N convolutions
+    - The RCNN uses predefined region proposals. The network uses N convolutions
     running for X epochs to selectively choose the best model according to the
     mean average precision based on the validation data.
     - The model uses a combined loss function to make a decision about the correct 
